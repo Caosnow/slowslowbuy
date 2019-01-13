@@ -1,0 +1,373 @@
+@charset "UTF-8";
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+[hidden],
+template {
+  display: none;
+}
+a {
+  background-color: transparent;
+}
+a:active,
+a:hover {
+  outline: 0;
+}
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+b,
+strong {
+  font-weight: bold;
+}
+dfn {
+  font-style: italic;
+}
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+mark {
+  background: #ff0;
+  color: #000;
+}
+small {
+  font-size: 80%;
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+img {
+  border: 0;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+figure {
+  margin: 1em 40px;
+}
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+pre {
+  overflow: auto;
+}
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+button {
+  overflow: visible;
+}
+button,
+select {
+  text-transform: none;
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+input {
+  line-height: normal;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+input[type="search"] {
+  -webkit-appearance: textfield;
+  box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+legend {
+  border: 0;
+  padding: 0;
+}
+textarea {
+  overflow: auto;
+}
+optgroup {
+  font-weight: bold;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+td,
+th {
+  padding: 0;
+}
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+body {
+  font-size: 14px;
+  font-family: 'Microsoft YaHei', sans-serif;
+  background-color: #f5f5f5;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+ul,
+ol {
+  list-style: none;
+}
+input[type="text"],
+input[type="search"],
+textarea {
+  border: none;
+  outline: none;
+  resize: none;
+  -webkit-appearance: none;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  visibility: hidden;
+  height: 0;
+  line-height: 0;
+  clear: both;
+}
+img {
+  display: block;
+  width: 100%;
+}
+i {
+  font-style: normal;
+}
+.content-main {
+  background-color: #fff;
+}
+.content-main h3 {
+  width: 100%;
+  height: 1.97333333rem;
+  padding: 0.53333333rem;
+  line-height: 0.53333333rem;
+  text-align: center;
+  font-size: 0.32rem;
+  font-weight: normal;
+}
+.content-main .img-box {
+  width: 4.8rem;
+  height: 4.8rem;
+  margin: 0 auto;
+  position: relative;
+}
+.content-main .img-box img {
+  width: 4.8rem;
+  height: 4.8rem;
+}
+.content-main .img-box a.collect {
+  position: absolute;
+  right: -1.86666667rem;
+  bottom: 0.24rem;
+  width: 1.09333333rem;
+  height: 1.09333333rem;
+  line-height: 1.09333333rem;
+  background-color: #8bc900;
+  font-size: 0.26666667rem;
+  color: #fff;
+  border: none;
+  text-align: center;
+  border-radius: 50%;
+  font-weight: 700;
+}
+.content-main .text a {
+  float: left;
+  width: 33.3%;
+  height: 0.90666667rem;
+  line-height: 0.90666667rem;
+  border-top: 2px solid #bd3e05;
+  border-bottom: 2px solid #bd3e05;
+  background-color: #ffc31c;
+  color: #fff;
+  text-align: center;
+  font-size: 0.26666667rem;
+}
+.content-main a:nth-child(2) {
+  border-left: 2px solid #bd3e05;
+  border-right: 2px solid #bd3e05;
+}
+.content-main table {
+  padding: 0.06666667rem;
+  font-size: 0.24rem;
+}
+.content-main table tr {
+  line-height: 0.48rem !important;
+}
+.content-main table .p_pic {
+  padding-top: 0.13333333rem;
+  padding-left: 0.26666667rem;
+}
+.content-main table .p_pic a {
+  display: block;
+}
+.content-main table .p_pic a img {
+  width: 0.25333333rem;
+  height: 0.25333333rem;
+  vertical-align: middle;
+}
+.content-main table td:nth-child(2) a {
+  position: relative;
+  left: -0.53333333rem;
+  font-size: 0.34666667rem;
+  color: #00000a;
+  font-weight: 580;
+}
+.content-main table .red {
+  color: #dd2305;
+  margin-right: 0.53333333rem;
+  font-size: 0.32rem;
+  position: relative;
+  right: -1.2rem;
+}
+.content-main .notes {
+  width: 100%;
+  height: 1.46666667rem;
+  line-height: 0.4rem;
+  font-size: 0.24rem;
+  padding: 0.2rem 0.44rem 0 0.24rem;
+  color: #836f61;
+  border-bottom: 7px solid #676767;
+  border-top: 2px solid #b2b2b2;
+}
+.content-main .comment .name-title p {
+  width: 100%;
+  height: 0.88rem;
+  line-height: 0.88rem;
+  text-align: center;
+  background-color: #dbdbdb;
+  color: #141439;
+  font-size: 0.32rem;
+  font-weight: 600;
+  margin: 0.26666667rem 0;
+}
+.content-main .comment .morecontent li {
+  margin-bottom: 0.2rem;
+}
+.content-main .comment .morecontent li a {
+  display: block;
+}
+.content-main .comment .morecontent li .ups {
+  height: 0.93333333rem;
+  line-height: 0.34666667rem;
+  padding-top: 0.10666667rem;
+}
+.content-main .comment .morecontent li .ups .left {
+  padding-left: 0.26666667rem;
+  height: 100%;
+  font-size: 0.29333333rem;
+}
+.content-main .comment .morecontent li .ups .right {
+  padding-right: 0.26666667rem;
+}
+.content-main .comment .morecontent li .ups .right .letter {
+  margin: 0;
+  font-size: 0.18666667rem;
+}
+.content-main .comment .morecontent li .downs {
+  padding: 0 0.29333333rem 0 0.26666667rem;
+  line-height: 0.6rem;
+  font-size: 0.24rem;
+  color: #00000a;
+}
+.content-main .comment .pro_more a {
+  background: linear-gradient(to bottom, #ffffff, #cccccc);
+  margin-bottom: 0.64rem;
+}

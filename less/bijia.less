@@ -1,0 +1,242 @@
+//导入normalize.less 进行浏览器样式统一
+@import "normalize";
+//在normalize 基础上 进行样式重置,添加一些自定义的类
+@import "base";
+
+// 引入公共的背景颜色
+@import "bgColor";
+
+//设计图尺寸
+@design:750;
+//基准值  = 设计图尺寸 /10
+@base:75rem;
+
+
+.content-main{
+    background-color: #fff;
+    h3{
+        width: 100%;
+        height: 148/@base;
+        padding: 40/@base;
+        line-height: 40/@base;
+        // background-color: pink;
+        text-align: center;
+        font-size: 24/@base;
+        font-weight: normal;
+    }
+    .img-box {
+            width: 360/@base;
+            height: 360/@base;
+            margin: 0 auto;
+            position: relative;
+        img{
+            width: 360/@base;
+            height: 360/@base;
+        }
+
+        a.collect{
+            position: absolute;
+            right: -140/@base;
+            bottom: 18/@base;
+            width: 82/@base;
+            height: 82/@base;
+            line-height: 82/@base;
+            background-color: #8bc900;
+            font-size: 20/@base;
+            color: #fff;
+            border: none;
+            text-align: center;
+            border-radius: 50%;
+            font-weight: 700;
+        }
+    }
+
+    .text a{
+        float: left;
+        width: 33.3%;
+        height: 68/@base;
+        line-height: 68/@base;
+        border-top: 2px solid #bd3e05;
+        border-bottom: 2px solid #bd3e05;
+        background-color: #ffc31c;
+        color: #fff;
+        text-align: center;
+        font-size: 20/@base;
+
+    
+    }
+    & a:nth-child(2){
+        border-left: 2px solid #bd3e05;
+        border-right: 2px solid #bd3e05;
+    }
+
+
+    // .price{
+    //     height: 88/@base;
+    //     line-height: 88/@base;
+    //     padding-left: 70/@base;
+    //     border-bottom: 2px solid #b2b2b2;
+
+    //     .left{
+    //         font-size: 26/@base;
+    //         font-weight: 580;
+    //     }
+    //     .right{
+    //         .price-red{
+    //             color: #dd2305;
+    //             margin-right: 40/@base;
+    //             font-size: 24/@base;
+    //         }
+
+    //         .btn{
+    //             padding: 10/@base;
+    //             border: none;
+    //             margin-right: 8/@base;
+    //             background-color: #ff5500;
+    //             color: #fff;
+    //             border-radius: 10/@base;
+    //             font-size: 24/@base;
+    //         }
+    //     }
+    // }
+      table{
+          padding: 5/@base;
+          font-size: 18/@base;
+          tr{
+            //   height: 40/@base;
+              line-height: 36/@base !important;
+           
+          }
+         .p_pic {
+            padding-top: 10/@base;
+            padding-left: 20/@base;
+            a {
+                  display: block;
+                //   padding-top: 5/@base;
+                // //   padding-left: 20/@base;
+                // margin-left: 20/@base;
+                  img{
+                      width: 19/@base;
+                      height: 19/@base;
+                      vertical-align: middle;
+                    //   display: block;
+                    //   margin: 4/@base 0;
+                      
+    
+                  }
+         }
+          }
+
+          & td:nth-child(2) a{
+            //   padding-left: -5/@base;
+            position: relative;
+            left: -40/@base;
+            font-size: 26/@base;
+            color: #00000a;
+            font-weight: 580;
+          }
+
+          .red{
+            color: #dd2305;
+            margin-right: 40/@base;
+            font-size: 24/@base;
+            position: relative;
+            right: -90/@base;
+          }
+          span{
+            //   width: 56/@base;
+            //   height: 24/@base;
+            //   line-height: 24/@base;
+            //   border-radius: 6/@base;
+            //   font-size: 14/@base;
+          }
+      }  
+
+
+    .notes{
+        width: 100%;
+        height: 110/@base;
+        line-height:  30/@base;
+        font-size: 18/@base;
+        padding: 15/@base 33/@base 0 18/@base;
+        color: #836f61;
+        border-bottom: 7px solid #676767;
+        border-top: 2px solid #b2b2b2;
+    }
+
+
+    .comment{
+        .name-title p{
+            width: 100%;
+            height: 66/@base;
+            line-height: 66/@base;
+            text-align: center;
+            background-color: #dbdbdb;
+            color: #141439;
+            font-size: 24/@base;
+            font-weight: 600;
+            margin:  20/@base 0;
+            
+        }
+
+        .morecontent li{
+            margin-bottom: 15/@base;
+            a{
+                display: block;
+            }
+            .ups {
+                height: 70/@base;
+                line-height: 26/@base;
+                // background-color: #8bc900;
+                padding-top: 8/@base;
+
+                .left{
+                    padding-left: 20/@base;
+                    height: 100%;
+                   
+                    font-size: 22/@base;
+                }
+
+                .right {
+                    padding-right: 20/@base;
+                    .letter{
+                        margin: 0;
+                        font-size: 14/@base;
+                        // line-height: 0;
+                        // overflow: hidden;
+                        // display: inline-block;
+                    }
+                }
+            }
+
+            .downs{
+                padding: 0 22/@base 0 20/@base;
+                line-height: 45/@base;
+                font-size: 18/@base;
+                color: #00000a;
+            }
+        }
+
+        .pro_more a{
+            background: linear-gradient(to bottom, white, #ccc);
+            margin-bottom: 48/@base;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

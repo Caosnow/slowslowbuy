@@ -11,34 +11,53 @@
     <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./lib/fa/css/font-awesome.min.css">
 </head>
 
 <body>
     <div class="mmm_container">
+            <div class="mui-scroll-wrapper">
+                    <div class="mui-scroll">
+
         <!-- 头部区域 -->
         <div class="mmm_header clearfix">
             <div class="head_left"><img src="./images/header_logo.png" alt=""></div>
             <div class="head_right clearfix"><a href="#"><img src="./images/header_app.png" alt=""></a></div>
         </div>
 
-
         <!-- 主体内容区域 -->
         <div class="mmm_main">
-            <div class="mui-scroll-wrapper">
-                <div class="mui-scroll">
+            <!-- 搜索框 -->
+                 <div class="mmm_search clearfix">
+                    <a href="#" class="btn">搜索</a>
+                    <div class="ser_input">
+                        <input type="text" placeholder="请输入你想比价的商品">
+                    </div>
+                </div>
+           
                     <!--这里放置真实显示的DOM内容-->
 
-                    <!-- 搜索框 -->
-                    <div class="mmm_search clearfix">
-                        <a href="#" class="btn">搜索</a>
-                        <div class="ser_input">
-                            <input type="text" placeholder="请输入你想比价的商品">
-                        </div>
-                    </div>
+                    
                     <!-- 导航区域 -->
                     <div class="mmm_mav">
                         <ul class="clearfix">
                             <!-- 挖了一个坑 -->
+                            <!-- <li>
+                                <a class="current{{indexmenuId == 7?'current':''}}" href="{{v.titlehref}}" data-id="{{v.indexmenuId}}">
+                                    <img src="images/ic_search.png" alt="比价搜索">
+                                    <p>比价搜索</p>
+                                </a>
+                            </li> -->
+                           
+                            <!-- 挖了一个坑 -->
+                            <ul class="hide-ul" style="display:none">
+                                <!-- <li>
+                                    <a class="{{v.indexmenuId === 7?'current':''}}" href="{{v.titlehref}}" data-id="{{v.indexmenuId}}">
+                                        <img src="images/ic_search.png" alt="比价搜索">
+                                        <p>比价搜索</p>
+                                    </a>
+                                </li> -->
+                            </ul>
                         </ul>
                     </div>
 
@@ -51,12 +70,11 @@
 
                         <div class="content">
                             <ul>
-
                                 <!-- 挖了一个坑 -->
                             </ul>
                         </div>
                         <div class="pro_more">
-                            <a href="#">更多优惠信息<i>>></i></a>
+                            <a href="moneyctrl.html">更多优惠信息<i>>></i></a>
                         </div>
                         <div class="produ_sort clearfix">
                             <p>品牌排行</p>
@@ -65,8 +83,7 @@
                     </div>
 
 
-                </div>
-            </div>
+             
 
 
         </div>
@@ -75,18 +92,20 @@
         <div class="mmm_footer">
             <a href="#">登录</a>
             <a href="#">注册</a>
-            <a href="#">返回顶部</a>
+            <a href="#" class="topBar"><span class="icon-top fa fa-arrow-circle-o-up"></span>返回顶部</a>
             <p><span>手机APP下载</span><span>慢慢买手机版</span><span>-- 掌上比价平台
                 </span></p>
             <p class="last">m.manmanbuy.com</p>
         </div>
     </div>
 
+    </div>
+</div>
     <!-- 准备模板 -->
     <script type="text/html" id="navTpl">
     {{each result v i}}
-        <li>
-            <a class="current{{indexmenuId == 7?'current':''}}" href="#" data-id="{{v.indexmenuId}}">
+        <li data-id="{{v.indexmenuId}}" style="display:{{ i>7 ?'none':'block' }}" data-type="{{ i>7?'1':'' }}">
+            <a href="{{v.titlehref}}" class="{{v.indexmenuId === 7?'current':''}}">
                 {{@ v.img}}
                 <p>{{v.name}}</p>
             </a>

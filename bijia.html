@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- 设置视口 -->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./lib/flexible/flexible.js"></script>
+    <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
+    <link rel="stylesheet" href="./css/common.css">
+   <link rel="stylesheet" href="./css/bijia.css">
+   <link rel="stylesheet" href="./lib/fa/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="mmm_container">
+            <div class="mui-scroll-wrapper">
+                    <div class="mui-scroll">
+
+        <!-- 头部区域 -->
+        <div class="mmm_header clearfix">
+            <div class="head_left"><img src="./images/header_logo.png" alt=""></div>
+            <div class="head_right clearfix"><a href="#"><img src="./images/header_app.png" alt=""></a></div>
+        </div>
+
+        <!-- 主体内容区域 -->
+        <div class="mmm_main">
+            <!-- 搜索框 -->
+                 <div class="mmm_search clearfix">
+                    <a href="#" class="btn">搜索</a>
+                    <div class="ser_input">
+                        <input type="text" placeholder="请输入你想比价的商品">
+                    </div>
+                </div>
+           
+                    <!--这里放置真实显示的DOM内容-->
+
+
+                <div class="pro-lujing clearfix">
+                    <div class="left fl">
+                      <!-- 挖了一个坑 -->
+                        
+                    </div>
+                    <div class="right fr">
+                        <a href="javascript:;" class="">筛选</a>
+                    </div>
+                </div>
+                    
+               
+                <div class="content-main">
+                       
+                    <div class="content-mbox">
+
+                             <!-- 挖了一个坑 -->
+                        
+                       
+
+                    </div>            
+
+                        <div class="comment">
+                            <div class="name-title">
+                                    <p> 网友评价</p>       
+                            </div>
+                            <ul class="morecontent">
+                               <!-- 挖了一个坑 -->
+                            </ul>
+                            <div class="pro_more">
+                                    <a href="moneyctrl.html">查看更多信息</a>
+                             </div>
+                        </div>
+                    </div>
+
+                
+        </div>
+
+       <!-- 底部区域 -->
+       <div class="mmm_footer">
+        <a href="#">登录</a>
+        <a href="#">注册</a>
+        <a href="#" class="topBar"><span class="icon-top fa fa-arrow-circle-o-up"></span>返回顶部</a>
+        <p><span>手机APP下载</span><span>慢慢买手机版</span><span>-- 掌上比价平台
+            </span></p>
+        <p class="last">m.manmanbuy.com</p>
+        </div>
+    </div>
+
+    </div>
+</div>
+   
+<!-- 准备模板 -->
+<script type="text/html" id="telTpl">
+               
+    <a href="index.html">首页<i class="fa fa-angle-right"></i></a>
+    <a href="productList.html">电视<i class="fa fa-angle-right"></i></a>
+    {{each arr v i}}
+    <a href="#">{{v}}</a>
+    {{/each}}
+</script>
+    
+
+<script type="text/html" id="contentTpl">
+
+    {{each result v i}}
+    
+    <div class="main-box">
+        <h3>{{v.productName}}</h3>
+     <div class="img-box">
+            {{@v.productImg}}
+            <a  href="#" class="collect">
+                收藏
+                </a>
+       </div>
+       <div class="text clearfix">
+        <a href="#">比价购买</a>
+        <a href="#">比价购买</a>
+        <a href="#">比价购买</a>
+    </div>
+
+        {{@v.bjShop}}
+    <div class="notes">
+    * 实际价格以各网站列出的实时售价为准，我们提供的价格可提供的价格可可能有数小时至数日的延迟</div>
+    </div>
+       
+
+       {{/each}}
+
+    </script>
+
+
+
+
+
+
+
+    <script type="text/html" id="commentTpl">
+    {{each result v i}}
+    
+        <li><a href="#">
+            <div class="ups clearfix">
+                <div class="left fl">
+                    <span>{{v.comName}}</span>
+                </div>
+                <div class="right fr">
+                    <p class="letter">{{v.comTime}}</p>
+                    <p class="letter">{{v.comFrom}}</p>
+                </div>
+            </div>
+            <div class="downs">
+                  {{v.comContent}}
+            </div>
+        </a></li>
+        {{/each}}
+    
+    
+    </script>
+
+
+
+ 
+    <script src="./lib/mui/js/mui.js"></script>
+    <script src="./lib/zepto/zepto.min.js"></script>
+    <script src="./lib/template/template-web.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/comSear.js"></script>
+    <script src="./js/bijia.js"></script>
+  
+    
+</body>
+
+</html>

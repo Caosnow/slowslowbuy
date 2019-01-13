@@ -1,0 +1,31 @@
+//导入normalize.less 进行浏览器样式统一
+@import "normalize";
+//在normalize 基础上 进行样式重置,添加一些自定义的类
+@import "base";
+
+// 引入公共的背景颜色
+@import "bgColor";
+
+//设计图尺寸
+@design:750;
+//基准值  = 设计图尺寸 /10
+@base:75rem;
+
+
+.mmm_header .title_heder{
+    overflow: hidden;
+    height: 98/@base;
+   text-align: center;
+   color: #fff;
+   font-size: 26/@base;
+    
+    h3{
+        // float: none;
+       line-height:98/@base;
+        margin: 0;
+      
+        // padding-right: 72/@base;
+        // width: 100%;
+    }
+    
+}

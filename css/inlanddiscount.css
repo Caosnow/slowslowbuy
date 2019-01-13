@@ -231,6 +231,44 @@ img {
 i {
   font-style: normal;
 }
-.mmm_main .content .cents .bottom .price {
-  margin-right: 0.13333333rem;
+.mmm_main {
+  background-color: #fff;
+}
+.mmm_main .mmm_content .ups_box li {
+  float: left;
+  width: 50%;
+  border-bottom: 1px solid #efefef;
+  border-right: 1px solid #efefef;
+}
+.mmm_main .mmm_content .ups_box li li:nth-child(2n) {
+  border-right: none;
+}
+.mmm_main .mmm_content .ups_box li a {
+  display: block;
+}
+.mmm_main .mmm_content .ups_box li a img {
+  width: 4rem;
+  height: 4rem;
+  margin: 0 auto;
+}
+.mmm_main .mmm_content .ups_box li a .title {
+  padding: 0.13333333rem 0.2rem 0 0.53333333rem;
+  margin-bottom: 0.33333333rem;
+}
+.mmm_main .mmm_content .ups_box li a .title p {
+  margin: 0;
+  font-size: 0.26666667rem;
+}
+.mmm_main .mmm_content .ups_box li a .title p.text {
+  color: #000;
+}
+.mmm_main .mmm_content .ups_box li a .title p.red {
+  color: #ff810b;
+}
+.mmm_main .mmm_content .ups_box li a .info {
+  padding: 0.13333333rem 0.2rem 0.26666667rem 0.53333333rem;
+}
+.mmm_main .mmm_content .ups_box li a .info span {
+  color: #b3aab6;
+  font-size: 0.24rem;
 }

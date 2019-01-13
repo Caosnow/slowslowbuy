@@ -88,12 +88,27 @@
 
     </div>
 </div>
+
+<!--    二级分类渲染 -->
+    <script type="text/html" id="oneTpl">
+        
+        {{each result v i}}
+        <a href="productList.html?categoryid={{v.categoryId}}&value={{v.category}}">{{v.category}}</a>
+        {{/each}}
+        
+    </script>
+
+
+
    
-<!-- 准备模板 -->
+<!-- 准备模板  <!三级分类--渲染  -->-->
 <script type="text/html" id="telTpl">
-               
+              
     <a href="index.html">首页<i class="fa fa-angle-right"></i></a>
-    <a href="productList.html">电视<i class="fa fa-angle-right"></i></a>
+    
+    
+     <a href="productList.html">电视<i class="fa fa-angle-right"></i></a>
+  
     {{each arr v i}}
     <a href="#">{{v}}</a>
     {{/each}}
@@ -163,7 +178,6 @@
     <script src="./lib/zepto/zepto.min.js"></script>
     <script src="./lib/template/template-web.js"></script>
     <script src="./js/common.js"></script>
-    <script src="./js/comSear.js"></script>
     <script src="./js/bijia.js"></script>
   
     

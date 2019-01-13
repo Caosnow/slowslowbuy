@@ -99,7 +99,7 @@
                         <a href="index.html">首页<i class="fa fa-angle-right"></i></a>
                         <a href="category.html">全部分类<i class="fa fa-angle-right"></i></a>
                         {{each result v i}}
-                        <a href="#">{{v.category}}</a>
+                        <a href="#">{{v.category}}<i class="fa fa-angle-right"></i></a>
                         {{/each}}
         </script>
 
@@ -108,7 +108,7 @@
 
             {{each result v i}}
                 <li>
-                    <a href="bijia.html?productId={{v.productId}}" >
+                    <a href="bijia.html?productId={{v.productId}}&categoryId={{v.categoryId}}" >
                         <div class="img_box fl" >{{@v.productImg}}</div>
                         <div class="text_box">
                             <p>{{v.productName}}</p>
@@ -137,7 +137,6 @@
     <script src="./lib/zepto/zepto.min.js"></script>
     <script src="./lib/template/template-web.js"></script>
     <script src="./js/common.js"></script>
-    <script src="./js/comSear.js"></script>
     <script src="./js/productList.js"></script>
     
 </body>

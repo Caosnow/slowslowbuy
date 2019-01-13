@@ -231,6 +231,8 @@ img {
 i {
   font-style: normal;
 }
-.mmm_main .content .cents .bottom .price {
-  margin-right: 0.13333333rem;
+.mmm_main .mmm_content .price span.red {
+  font-size: 0.26666667rem;
+  color: #ff5a00;
+  margin: 0;
 }

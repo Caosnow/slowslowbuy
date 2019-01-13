@@ -28,7 +28,14 @@
         <!-- 主体内容区域 -->
         <div class="mmm_main">
            
-           
+               
+                <div class="content">
+                        <ul class="cents">
+                                
+                           
+                            <!-- 挖了一个坑 -->
+                        </ul>
+                    </div>
                  
 
 
@@ -74,7 +81,27 @@
    
 
 
+<script type="text/html" id="contralTpl">
 
+    {{each result v i}}
+        <li>
+            <a href="moneyproduct.html?productId={{v.productId}}" >
+                <div class="img_box fl" >{{@v.productImgSm}}</div>
+                <div class="text_box">
+                    <p>{{v.productName}}</p>
+                    <p class="red">{{v.productPinkage}}</p> 
+                    <div class="bottom clearfix">
+                            <div class="left fl"><span>{{v.productFrom}}|</span><span>{{v.productTime}}</span></div>
+                            <div class="right fr"><span>{{v.productComCount}}</span></div>
+                        </div>
+                </div>
+                
+            </a>
+        </li>
+ {{/each}}   
+
+
+</script>
 
 
 
@@ -82,9 +109,10 @@
  
     <script src="./lib/mui/js/mui.js"></script>
     <script src="./lib/zepto/zepto.min.js"></script>
-    <!-- <script src="./lib/template/template-web.js"></script> -->
+    <script src="./lib/template/template-web.js"></script>
     <script src="./js/common.js"></script>
-    <!-- <script src="./js/comSear.js"></script> -->
+    <script src="./js/moneyctrl.js"></script>
+
  
     
 </body>

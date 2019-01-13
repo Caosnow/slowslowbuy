@@ -231,6 +231,24 @@ img {
 i {
   font-style: normal;
 }
-.mmm_main .content .cents .bottom .price {
-  margin-right: 0.13333333rem;
+.mmm_container .mmm_header {
+  background-color: #f4483e;
+}
+.mmm_main .mmm_content {
+  position: relative;
+}
+.mmm_main .mmm_content .mmm_nav li {
+  float: left;
+  width: 16.6%;
+  height: 1.04rem;
+  line-height: 1.01333333rem;
+  background-color: #fff;
+  text-align: center;
+}
+.mmm_main .mmm_content .mmm_nav li a {
+  padding: 0.24rem 0;
+}
+.mmm_main .mmm_content .mmm_nav li a.current {
+  border-bottom: 3px solid #e22f32;
+  color: #e22f32;
 }

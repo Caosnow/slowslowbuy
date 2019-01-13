@@ -1,10 +1,33 @@
 
-$(function(){
+
 
     var url = new getSearch();
+    var cateid = url.categoryId;
+    console.log(cateid);
     var id = url.productId;
     console.log(id);
+    
 
+    //二级分类 点击电视跳转 电视页 
+    $.ajax({
+        url:'http://127.0.0.1:9090/api/getcategorybyid',
+        type:'get',
+        data:{
+            categoryid:cateid
+        },
+        dataType:'json',
+        success:function(info){
+            console.log(info);
+            var htmlStr = template('oneTpl',info);
+            $('.pro-lujing .left a:nth-child(2)').html(htmlStr);
+        }
+
+    })
+
+
+
+    
+    //三级分类
     $.ajax({
         url:'http://127.0.0.1:9090/api/getproduct',
         type:'get',
@@ -13,7 +36,7 @@ $(function(){
         },
         dataType:'json',
         success:function(info){
-            // console.log(info);
+            console.log(info);
             // console.log(info.result[0].bjShop);
             // console.log(info.result[0].productName);
             var str = info.result[0].productName;
@@ -57,4 +80,3 @@ $(function(){
 
 
 
-})

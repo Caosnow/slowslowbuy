@@ -1,0 +1,43 @@
+//导入normalize.less 进行浏览器样式统一
+@import "normalize";
+//在normalize 基础上 进行样式重置,添加一些自定义的类
+@import "base";
+
+// 引入公共的背景颜色
+@import "bgColor";
+
+//设计图尺寸
+@design:750;
+//基准值  = 设计图尺寸 /10
+@base:75rem;
+
+
+
+
+.mmm_container .mmm_header{
+    background-color: #f4483e;
+}
+
+.mmm_main .mmm_content{
+    position: relative;
+    .mmm_nav li{
+        float: left;
+        width: 16.6%;
+        height: 78/@base;
+        line-height: 76/@base;
+        background-color: #fff;
+        text-align: center;
+
+        a{
+            padding: 18/@base 0;
+            
+
+            &.current{
+                border-bottom: 3px solid #e22f32;
+                color: #e22f32;
+            }
+        }
+    }
+}
+
+

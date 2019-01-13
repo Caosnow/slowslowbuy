@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- 设置视口 -->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./lib/flexible/flexible.js"></script>
+    <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/inlanddiscount.css">
+   <link rel="stylesheet" href="./lib/fa/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="mmm_container">
+            <div class="mui-scroll-wrapper">
+                    <div class="mui-scroll">
+
+        <!-- 头部区域 -->
+        <div class="mmm_header">
+            <div class="head_right clearfix"><a href="#"><img src="./images/header_app.png" alt=""></a></div>
+            <div class="title_heder"><h3>国内折扣</h3></div>
+        </div>
+
+        <!-- 主体内容区域 -->
+        <div class="mmm_main">
+
+           <div class="mmm_content">
+                    <div class="ups_box">
+                        <ul class="clearfix">
+                          
+                            <!-- 挖了一个坑 -->
+                         
+                        </ul>
+
+               
+                       
+                    </div>
+                    
+           </div>
+
+
+
+        </div>
+
+        <!-- 底部区域 -->
+        <div class="mmm_footer clearfix">
+            <footer>
+            <a href="#">登录</a>
+            <a href="#">注册</a>
+            <a href="#" class="topBar"><span class="icon-top fa fa-arrow-circle-o-up"></span>返回顶部</a>
+        </footer>
+            <p><span>手机APP下载</span><span>慢慢买手机版</span><span>-- 掌上比价平台
+                </span></p>
+            <p class="last">m.manmanbuy.com</p>
+        </div>
+    </div>
+
+    </div>
+</div>
+   
+
+<script type="text/html" id="infoTpl">
+    {{each result v i}}
+    <li>
+            <a href="discount.html?productId={{v.productId}}">
+          
+                   {{@v.productImg}}
+               
+                <div class="title">
+                    <p class="text">{{v.productName}}</p>
+                    <p class="red">{{v.productPrice}}</p>
+                </div>
+                <div class="info">
+                    <span>{{v.productFrom}}</span>
+                    <span class="line">|</span>
+                    <span>{{v.productTime}}</span>
+                </div>
+            </a>
+        </li>   
+
+        {{/each}}
+
+
+</script>
+
+
+
+
+ 
+    <script src="./lib/mui/js/mui.js"></script>
+    <script src="./lib/zepto/zepto.min.js"></script>
+    <script src="./lib/template/template-web.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/inlanddiscount.js"></script>
+    
+
+    
+   
+
+ 
+    
+</body>
+
+</html>

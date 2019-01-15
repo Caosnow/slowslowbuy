@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- 设置视口 -->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./lib/flexible/flexible.js"></script>
+    <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/sgproduct.css">
+   <link rel="stylesheet" href="./lib/fa/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="mmm_container">
+            <div class="mui-scroll-wrapper">
+                    <div class="mui-scroll">
+        <!-- 头部区域 -->
+        <div class="mmm_header clearfix">
+            <div class="head_left"><a href="index.html"><img src="./images/header_logo.png" alt=""></a></div>
+            <div class="head_right clearfix"><a href="index.html"><img src="./images/header_app.png" alt=""></a></div>
+        </div>
+        <!-- 主体内容区域 -->
+        <div class="mmm_main brandtotal gsproduct">
+          <div class="gspro-content">
+              <ul class="clearfix">
+                  <li>
+                      <a href="javascript:;" class="lii">
+                          京东
+                          <i class="fa fa-caret-down"></i>
+                      </a>
+                      <div class="second hideone addnum">
+                            <ul>
+                            <!-- 挖了一个坑 -->
+                                
+                            </ul>
+                        </div>
+                     
+                  </li>
+                  <li>
+                      <a href="javascript:;" class="lii">
+                          华北
+                          <i class="fa fa-caret-down"></i>
+                      </a>
+                      <div class="second hidetwo areadata">
+                            <ul>
+                               <!-- 挖了一个坑 -->
+                                
+                            </ul>
+                        </div>
+                  </li>
+                  <li>
+                      <a href="javascript:;" class="lii">
+                            全部价格
+                          <i class="fa fa-caret-down"></i>
+                      </a>
+                      <div class="second hidethree">
+                            <ul>
+                                <li class="clearfix">
+                                    <a href="#" class="current fl">全部价格 <i class="check fa fa-check fr"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                  </li>
+              </ul>
+          </div>
+           <div class="gslist"> 
+              <ul class="clearfix">
+
+                 <!-- 挖了一个大坑 -->
+
+              </ul>
+          </div> 
+        </div>
+
+        <!-- 底部区域 -->
+        <div class="mmm_footer clearfix">
+            <footer>
+            <a href="#">登录</a>
+            <a href="#">注册</a>
+            <a href="#" class="topBar"><span class="icon-top fa fa-arrow-circle-o-up"></span>返回顶部</a>
+        </footer>
+            <p><span>手机APP下载</span><span>慢慢买手机版</span><span>-- 掌上比价平台
+                </span></p>
+            <p class="last">m.manmanbuy.com</p>
+        </div>
+            </div>
+
+        </div>
+    </div>
+   
+<!-- 准备模板 -->
+      <script type="text/html" id="numTpl">
+      {{each result v i}}
+        <li class="clearfix" data-id="{{v.shopId}}">
+                <a href="javascript:;" class="current fl arrow">{{v.shopName}} <i class="{{v.shopId ==0? 'check':''}} fa fa-check fr"></i></a>
+            </li>
+      
+        {{/each}}
+      
+      
+      </script>
+
+      <script type="text/html" id="areaTpl">
+        {{each result v i }}
+                <li class="clearfix" data-id="{{v.areaId}}">
+                    <a href="javascript:;" class="current fl">{{v.areaName}} <i class="{{v.areaId ==0? 'check':''}} fa fa-check fr"></i></a>
+                </li>
+        {{/each}}
+      
+      
+      </script>
+
+      <script type="text/html" id="listTpl">
+        {{each result v i}}
+        <li>
+                <a href="#">
+                    <img src="{{v.productImg}}" alt="">
+                    <p class="mui-ellipsis">{{v.productName}}</p>
+                    <div class="bottombox clearfix">
+                        <div class="left fl"><span class="price">{{v.productPrice}}</span></div>
+                        <div class="right fr"><a href="#">去凑单</a></div>
+                    </div>
+                </a>
+            </li>
+        {{/each}}
+      
+      
+      
+      </script>
+   
+
+ 
+    <script src="./lib/mui/js/mui.js"></script>
+    <script src="./lib/zepto/zepto.min.js"></script>
+    <script src="./lib/template/template-web.js"></script>
+    <script src="./js/common.js"></script>
+   <script src="./js/gsproduct.js"></script>
+    
+</body>
+
+</html>

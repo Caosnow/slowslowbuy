@@ -232,55 +232,103 @@ i,
 em {
   font-style: normal;
 }
-.content-box li {
-  background-color: #fff;
+.mmm_main.brandtotal.gsproduct .gspro-content {
+  position: relative;
 }
-.content-box li .title {
-  width: 100%;
-  height: 1.04rem;
-  line-height: 1.01333333rem;
-  background-color: #ededed;
-  border-top: 1px solid #cecece;
-  border-bottom: 1px solid #cecece;
-}
-.content-box li .title .bigtitle {
-  float: left;
-  height: 100%;
-  color: #fff;
-  padding-left: 0.26666667rem;
-  margin: 0;
-  font-size: 0.32rem;
-  color: #000;
-}
-.content-box li .title .more {
-  float: right;
-  margin-right: 0.26666667rem;
-  font-size: 0.32rem;
-  color: #807777;
-}
-.content-box li .titlea.togglee .fa-angle-up {
-  display: none;
-}
-.content-box li #hide-box {
-  display: none;
-}
-.content-box li #hide-box .ul-box li {
+.mmm_main.brandtotal.gsproduct .gspro-content li {
   float: left;
   width: 33.3%;
-  text-align: center;
-  height: 1.06666667rem;
-  line-height: 1.06666667rem;
-  border-bottom: 1px solid #cecece;
-  border-right: 1px solid #cecece;
+  height: 1rem;
+  line-height: 1rem;
   background-color: #fff;
+  text-align: center;
+  border-bottom: 1px solid #dddddd;
 }
-.content-box li #hide-box .ul-box li a {
-  display: block;
-  font-size: 0.21333333rem;
-}
-.content-box li #hide-box.current {
+.mmm_main.brandtotal.gsproduct .gspro-content li a {
   display: block;
 }
-.content:nth-last-child(1) {
-  margin-bottom: 0.6rem;
+.mmm_main.brandtotal.gsproduct .gspro-content li .second {
+  position: absolute;
+  left: 0;
+  top: 1rem;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+}
+.mmm_main.brandtotal.gsproduct .gspro-content li .second ul {
+  width: 100%;
+  height: 100%;
+}
+.mmm_main.brandtotal.gsproduct .gspro-content li .second ul li {
+  width: 100%;
+  height: 100%;
+}
+.mmm_main.brandtotal.gsproduct .gspro-content li .second ul li a.current {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  padding-left: 0.10666667rem;
+}
+.mmm_main.brandtotal.gsproduct .gspro-content li .second ul li a.current i {
+  padding-right: 0.13333333rem;
+  font-size: 0.37333333rem;
+  color: #ff9501;
+  margin: 0.29333333rem 0;
+  display: none;
+}
+.mmm_main.brandtotal.gsproduct .gspro-content li .second ul li a.current i.check {
+  display: block;
+}
+.mmm_main.brandtotal.gsproduct .gspro-content li .second.hideone,
+.mmm_main.brandtotal.gsproduct .gspro-content li .second.hidetwo,
+.mmm_main.brandtotal.gsproduct .gspro-content li .second.hidethree {
+  display: none;
+}
+.gslist {
+  padding: 0.2rem 0.13333333rem;
+}
+.gslist li {
+  float: left;
+  width: 49%;
+  background-color: #fff;
+  margin-bottom: 0.18666667rem;
+}
+.gslist li:nth-child(2n+1) {
+  margin-right: 2%;
+}
+.gslist li img {
+  width: 4.77333333rem;
+  height: 4.72rem;
+  margin: 0 auto;
+}
+.gslist li p {
+  height: 0.53333333rem;
+  line-height: 0.53333333rem;
+  margin: 0;
+  font-size: 0.26666667rem;
+  padding: 0 0.13333333rem;
+  color: #000;
+}
+.gslist li .bottombox {
+  padding: 0 0.13333333rem;
+  height: 0.8rem;
+  line-height: 0.66666667rem;
+}
+.gslist li .bottombox .price {
+  color: #f64022;
+  font-size: 0.37333333rem;
+}
+.gslist li .bottombox .right {
+  width: 1.68rem;
+  height: 0.66666667rem;
+  border: 1px solid #e7880e;
+  background-color: #ff9501;
+  border-radius: 0.06666667rem;
+}
+.gslist li .bottombox .right a {
+  display: block;
+  text-align: center;
+  font-size: 0.26666667rem;
+  color: #fff;
 }

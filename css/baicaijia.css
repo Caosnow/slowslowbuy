@@ -228,27 +228,145 @@ img {
   display: block;
   width: 100%;
 }
-i {
+i,
+em {
   font-style: normal;
 }
 .mmm_container .mmm_header {
   background-color: #f4483e;
 }
 .mmm_main .mmm_content {
+  padding: 0;
   position: relative;
+  background-color: #f8f8f8;
 }
-.mmm_main .mmm_content .mmm_nav li {
+.mmm_main .mmm_content .mmm_nav {
+  margin-bottom: 0.13333333rem;
+}
+.mmm_main .mmm_content .mmm_nav ul {
+  overflow: hidden;
+  width: 26.67rem;
+}
+.mmm_main .mmm_content .mmm_nav ul li {
   float: left;
-  width: 16.6%;
+  padding: 0 0.29333333rem;
   height: 1.04rem;
   line-height: 1.01333333rem;
   background-color: #fff;
   text-align: center;
 }
-.mmm_main .mmm_content .mmm_nav li a {
-  padding: 0.24rem 0;
+.mmm_main .mmm_content .mmm_nav ul li a {
+  display: block;
+  font-size: 0.26666667rem;
 }
-.mmm_main .mmm_content .mmm_nav li a.current {
+.mmm_main .mmm_content .mmm_nav ul li a.current {
   border-bottom: 3px solid #e22f32;
   color: #e22f32;
+}
+.mmm_main .mmm_content .mmm_list ul li {
+  margin-bottom: 0.13333333rem;
+  background-color: #fff;
+}
+.mmm_main .mmm_content .mmm_list ul li .img_box.left-img {
+  width: 40%;
+  height: 3.49333333rem;
+  background-color: #e22f32;
+}
+.mmm_main .mmm_content .mmm_list ul li .img_box.left-img img {
+  height: 3.49333333rem;
+}
+.mmm_main .mmm_content .mmm_list ul li .text_box.right_info {
+  overflow: hidden;
+  height: 3.49333333rem;
+  padding: 0.13333333rem 0 0 0.16rem;
+  position: relative;
+}
+.mmm_main .mmm_content .mmm_list ul li .text_box.right_info p {
+  margin: 0;
+  height: 0.8rem;
+  line-height: 0.4rem;
+  font-size: 0.34666667rem;
+  color: #000;
+}
+.mmm_main .mmm_content .mmm_list ul li .text_box.right_info p.red {
+  height: 0.66666667rem;
+  line-height: 0.53333333rem;
+  color: #e22f32;
+  font-size: 0.32rem;
+}
+.mmm_main .mmm_content .mmm_list ul li .text_box.right_info p.red del {
+  margin-left: 0.08rem;
+  font-size: 0.26666667rem;
+  color: #a8b5d2;
+}
+.mmm_main .mmm_content .mmm_list ul li .text_box.right_info .bar {
+  padding: 0.2rem 0;
+}
+.mmm_main .mmm_content .mmm_list ul li .text_box.right_info .bar i {
+  display: inline-block;
+  width: 2.16rem;
+  height: 0.29333333rem;
+  line-height: 0.29333333rem;
+  border: 2px solid #fc353a;
+  background-color: #ffb7b7;
+  border-radius: 0.13333333rem;
+  position: relative;
+  font-size: 0.24rem;
+  text-align: center;
+  color: #fff;
+}
+.mmm_main .mmm_content .mmm_list ul li .text_box.right_info .bar i em {
+  display: inline-block;
+  height: 100%;
+  background-color: #fc353a;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 0.13333333rem;
+}
+.mmm_main .mmm_content .mmm_list ul li .text_box.right_info .bar i span {
+  position: relative;
+  z-index: 999;
+}
+.mmm_main .mmm_content .mmm_list ul li .text_box.right_info .bar b {
+  font-size: 0.26666667rem;
+  color: #fc353a;
+  font-weight: normal;
+  margin-left: 0.36rem;
+}
+.mmm_main .mmm_content .mmm_list ul li .text_box.right_info .quan {
+  margin-top: 0.13333333rem;
+  width: 2.93333333rem;
+  height: 0.53333333rem;
+  line-height: 0.53333333rem;
+  border: 1px dashed #ffb7b7;
+  border-radius: 0.06666667rem;
+  text-align: center;
+  position: absolute;
+  bottom: 0.29333333rem;
+  left: 0;
+  overflow: hidden;
+}
+.mmm_main .mmm_content .mmm_list ul li .text_box.right_info .quan a {
+  display: block;
+  font-size: 0.26666667rem;
+  color: #fc353a;
+  text-align: center;
+}
+.mmm_main .mmm_content .mmm_list ul li .text_box.right_info .link {
+  width: 1.52rem;
+  height: 0.53333333rem;
+  line-height: 0.53333333rem;
+  position: absolute;
+  right: 0.13333333rem;
+  bottom: 0.29333333rem;
+  border-radius: 0.06666667rem;
+  background-color: #ffb7b7;
+  border: 1px solid #e22f32;
+  overflow: hidden;
+}
+.mmm_main .mmm_content .mmm_list ul li .text_box.right_info .link a {
+  display: block;
+  font-size: 0.24rem;
+  text-align: center;
 }

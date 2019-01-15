@@ -19,7 +19,7 @@
         success:function(info){
             console.log(info);
             var htmlStr = template('oneTpl',info);
-            $('.pro-lujing .left a:nth-child(2)').html(htmlStr);
+            $('.seconds').html(htmlStr);
         }
 
     })
@@ -45,7 +45,7 @@
         //    var arr1= arr.slice(2);
         //    console.log(arr1);
            var htmlStr = template('telTpl',{arr:arr});
-           $('.pro-lujing .left').html(htmlStr);
+           $('.three').html(htmlStr);
 
            var htmls = template('contentTpl',info);
            $('.content-main .content-mbox').html(htmls);
@@ -65,7 +65,7 @@
         },
         dataType:'json',
         success:function(info){
-            console.log(info);
+            // console.log(info);
 
             var hstr = template('commentTpl',info);
             $('.comment .morecontent').html(hstr);

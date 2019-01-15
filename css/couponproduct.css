@@ -232,55 +232,68 @@ i,
 em {
   font-style: normal;
 }
-.content-box li {
-  background-color: #fff;
+.mmm_header.row.couprt {
+  background-color: #f4483e;
 }
-.content-box li .title {
+.mmm_main .coup_title {
   width: 100%;
-  height: 1.04rem;
-  line-height: 1.01333333rem;
-  background-color: #ededed;
-  border-top: 1px solid #cecece;
-  border-bottom: 1px solid #cecece;
-}
-.content-box li .title .bigtitle {
-  float: left;
-  height: 100%;
-  color: #fff;
-  padding-left: 0.26666667rem;
-  margin: 0;
-  font-size: 0.32rem;
-  color: #000;
-}
-.content-box li .title .more {
-  float: right;
-  margin-right: 0.26666667rem;
-  font-size: 0.32rem;
-  color: #807777;
-}
-.content-box li .titlea.togglee .fa-angle-up {
-  display: none;
-}
-.content-box li #hide-box {
-  display: none;
-}
-.content-box li #hide-box .ul-box li {
-  float: left;
-  width: 33.3%;
+  height: 0.86666667rem;
+  line-height: 0.86666667rem;
   text-align: center;
-  height: 1.06666667rem;
-  line-height: 1.06666667rem;
-  border-bottom: 1px solid #cecece;
-  border-right: 1px solid #cecece;
-  background-color: #fff;
 }
-.content-box li #hide-box .ul-box li a {
-  display: block;
-  font-size: 0.21333333rem;
+.mmm_main .coup_title p {
+  font-size: 0.24rem;
+  margin: 0;
 }
-.content-box li #hide-box.current {
-  display: block;
+.mmm_main .content.coupro-box .img_box {
+  padding-left: 0.2rem;
 }
-.content:nth-last-child(1) {
-  margin-bottom: 0.6rem;
+.mmm_main .content.coupro-box .text_box {
+  padding: 0.16rem;
+}
+.mmm_main .content.coupro-box .text_box p {
+  margin: 0;
+  height: 1.70666667rem;
+  line-height: 0.42666667rem;
+  color: #5e2824;
+  font-size: 0.26666667rem;
+}
+.mmm_main .content.coupro-box .text_box p.red {
+  color: #000;
+  font-weight: 600;
+  font-size: 0.26666667rem;
+}
+.mmm_main .content.coupro-box .text_box .bottom .comment {
+  color: #f58b30;
+  font-size: 0.25333333rem;
+}
+.mmm_mtk {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  display: none;
+}
+.mmm_mtk .imge_box {
+  width: 2.67rem;
+  height: 2.13rem;
+  margin: 2.67rem auto;
+  background-color: red;
+}
+.mmm_mtk span {
+  font-size: 1.07rem;
+  position: absolute;
+  top: 3.2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+}
+.mmm_mtk span.arrow-left {
+  margin-left: -150px;
+}
+.mmm_mtk span.arrow-right {
+  margin-left: 150px;
 }

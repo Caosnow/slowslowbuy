@@ -10,7 +10,7 @@
     <script src="./lib/flexible/flexible.js"></script>
     <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
     <link rel="stylesheet" href="./css/common.css">
-   <link rel="stylesheet" href="./css/moneyctral.css">
+    <link rel="stylesheet" href="./css/couponproduct.css">
    <link rel="stylesheet" href="./lib/fa/css/font-awesome.min.css">
 </head>
 
@@ -20,42 +20,33 @@
                     <div class="mui-scroll">
 
         <!-- 头部区域 -->
-        <div class="mmm_header row">
+        <div class="mmm_header row couprt">
                 <div class="left"><a href="index.html"><i class="fa fa-chevron-left"></i></a></div>
                 <div class="head_right clearfix"><a href="#"><img src="./images/header_app.png" alt=""></a></div>
-                <div class="title_heder"><h3> 省钱控 - 最新优惠</h3></div>  
+                <div class="title_heder"><h3> 白菜价-淘宝内部券</h3></div>  
             </div>
+    
 
         <!-- 主体内容区域 -->
-        <div class="mmm_main">
+        <div class="mmm_main conproct">
            
-               
-                <div class="content">
-                        <ul class="cents">
+           
+                    <!--这里放置真实显示的DOM内容-->
+
+
+
+                <div class="coup_title">
+                    <p>--点餐前出示手机中的优惠券，即可享受优惠--</p>
+                </div>
+                <div class="content coupro-box">
+                        <ul>
                                 
                            
                             <!-- 挖了一个坑 -->
                         </ul>
                     </div>
-                 
 
-
-                
-               
-                
-
-                    <!-- 分页按钮 -->
-                    <div class="paginator-box">
-                            <ul>
-                                <li><a href="javascript:;" class="left">上一页</a></li>
-                                <li>
-                                <a href="javascript:;"><span class="texts">1</span><span>/</span><span>15</span></a>
-                               
-                                </li>
-                                <li><a href="javascript:;" class="right">下一页</a></li>
-                            </ul>
-                        </div>
-    
+              
         </div>
 
         <!-- 底部区域 -->
@@ -74,29 +65,43 @@
     </div>
 </div>
    
+        <!--  盒子的模态框-->
+        <div class="mmm_mtk">
+            <div class="imge_box">
+                <img src="" alt="">
+            </div>
+            <span class="arrow-left fa fa-angle-left"></span>
+            <span class="arrow-right fa fa-angle-right"></span>
+        </div>
+
+<!-- 准备模板 -->
+    
 
 
-<script type="text/html" id="contralTpl">
+        <script type="text/html" id="contentTpl">
 
-    {{each result v i}}
-        <li>
-            <a href="moneyproduct.html?productId={{v.productId}}" >
-                <div class="img_box fl" >{{@v.productImgSm}}</div>
-                <div class="text_box">
-                    <p>{{v.productName}}</p>
-                    <p class="red">{{v.productPinkage}}</p> 
-                    <div class="bottom clearfix">
-                            <div class="left fl"><span>{{v.productFrom}}|</span><span>{{v.productTime}}</span></div>
-                            <div class="right fr"><span>{{v.productComCount}}</span></div>
+            {{each result v i}}
+                <li class="couleft">
+                    <a href="javascript:;" >
+                        <div class="img_box fl" >{{@v.couponProductImg}}</div>
+                        <div class="text_box">
+                            <p class="blues">{{v.couponProductName}}</p>
+                            <p class="red">{{v.couponProductPrice}}</p> 
+                            <div class="bottom clearfix">
+                                <div class="left fl"><span class="comment">{{v.couponProductTime}}</span></div>
+                            </div>
                         </div>
-                </div>
-                
-            </a>
-        </li>
- {{/each}}   
+                        
+                    </a>
+                </li>
+         {{/each}}   
 
 
-</script>
+    </script>
+
+
+
+
 
 
 
@@ -106,9 +111,7 @@
     <script src="./lib/zepto/zepto.min.js"></script>
     <script src="./lib/template/template-web.js"></script>
     <script src="./js/common.js"></script>
-    <script src="./js/moneyctrl.js"></script>
-
- 
+    <script src="./js/couponproduct.js"></script>
     
 </body>
 

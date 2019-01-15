@@ -19,11 +19,11 @@
             <div class="mui-scroll-wrapper">
                     <div class="mui-scroll">
 
-        <!-- 头部区域 -->
-        <div class="mmm_header clearfix">
-            <div class="head_left"><img src="./images/header_logo.png" alt=""></div>
-            <div class="head_right clearfix"><a href="#"><img src="./images/header_app.png" alt=""></a></div>
-        </div>
+          <!-- 头部区域 -->
+          <div class="mmm_header clearfix">
+                <div class="head_left"><a href="index.html"><img src="./images/header_logo.png" alt=""></a></div>
+                <div class="head_right clearfix"><a href="index.html"><img src="./images/header_app.png" alt=""></a></div>
+            </div>
 
         <!-- 主体内容区域 -->
         <div class="mmm_main">
@@ -40,8 +40,13 @@
 
                 <div class="pro-lujing clearfix">
                     <div class="left fl">
-                      <!-- 挖了一个坑 -->
-                        
+                   <a href="index.html">首页></a>
+                    <span class="seconds">
+                        <a href="">电视></a>
+                    </span>
+                    <span class="three">
+                        <a href="">乐视></a>
+                    </span>    
                     </div>
                     <div class="right fr">
                         <a href="javascript:;" class="">筛选</a>
@@ -91,29 +96,23 @@
 
 <!--    二级分类渲染 -->
     <script type="text/html" id="oneTpl">
-        
+       
         {{each result v i}}
-        <a href="productList.html?categoryid={{v.categoryId}}&value={{v.category}}">{{v.category}}</a>
+        <a href="productList.html?categoryid={{v.categoryId}}&value={{v.category}}">{{v.category}}></a>
         {{/each}}
-        
+         
     </script>
 
 
 
    
-<!-- 准备模板  <!三级分类--渲染  -->-->
-<script type="text/html" id="telTpl">
+<!-- 准备模板  <!三级分类--渲染  -->
+ <script type="text/html" id="telTpl">
               
-    <a href="index.html">首页<i class="fa fa-angle-right"></i></a>
-    
-    
-     <a href="productList.html">电视<i class="fa fa-angle-right"></i></a>
-  
     {{each arr v i}}
     <a href="#">{{v}}</a>
     {{/each}}
-</script>
-    
+</script>  
 
 <script type="text/html" id="contentTpl">
 

@@ -1,0 +1,111 @@
+//导入normalize.less 进行浏览器样式统一
+@import "normalize";
+//在normalize 基础上 进行样式重置,添加一些自定义的类
+@import "base";
+
+// 引入公共的背景颜色
+@import "bgColor";
+
+//设计图尺寸
+@design:750;
+//基准值  = 设计图尺寸 /10
+@base:75rem;
+
+.mmm_header.row.couprt{
+    background-color: #f4483e;
+}
+
+
+.mmm_main{
+   
+    .coup_title{
+        width: 100%;
+        height: 65/@base;
+        line-height: 65/@base;
+        text-align: center;
+       
+        
+        p{
+            font-size: 18/@base;
+            margin: 0;
+        }
+    }
+    .content.coupro-box{
+        .img_box {
+            padding-left:15/@base;
+        }
+       
+
+        .text_box{ 
+            padding: 12/@base;
+            p{
+                margin: 0;
+                height: 128/@base;
+                line-height: 32/@base;
+                color: #5e2824;
+                font-size: 20/@base;
+               
+
+                
+                &.red{
+                    color: #000;
+                    font-weight: 600;
+                    font-size: 20/@base;
+
+                }
+            }
+
+            .bottom{
+                .comment{
+                    color: #f58b30;
+                    font-size: 19/@base;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+.mmm_mtk {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .7);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    display: none;
+
+    .imge_box{
+        width: 2.67rem;
+        height: 2.13rem;
+        margin: 2.67rem auto;
+        background-color: red;
+       
+        
+    }
+
+    span {
+        font-size: 1.07rem;
+        position: absolute;
+        top: 3.2rem;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #fff;
+        
+        &.arrow-left{
+            margin-left: -150px;
+        }
+        &.arrow-right {
+            margin-left: 150px;
+            
+
+
+    }
+    
+    }
+}
+
+

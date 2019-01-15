@@ -19,11 +19,11 @@
             <div class="mui-scroll-wrapper">
                     <div class="mui-scroll">
 
-        <!-- 头部区域 -->
-        <div class="mmm_header clearfix">
-            <div class="head_left"><img src="./images/header_logo.png" alt=""></div>
-            <div class="head_right clearfix"><a href="#"><img src="./images/header_app.png" alt=""></a></div>
-        </div>
+           <!-- 头部区域 -->
+           <div class="mmm_header clearfix">
+                <div class="head_left"><a href="index.html"><img src="./images/header_logo.png" alt=""></a></div>
+                <div class="head_right clearfix"><a href="index.html"><img src="./images/header_app.png" alt=""></a></div>
+            </div>
 
         <!-- 主体内容区域 -->
         <div class="mmm_main">
@@ -60,18 +60,12 @@
                     <!-- 分页按钮 -->
                     <div class="paginator-box">
                         <ul>
-                            <li><a href="javascript:;">上一页</a></li>
+                            <li><a href="javascript:;" class="left">上一页</a></li>
                             <li>
-                                    <!-- <a href="javascript:;" class="current"> -->
-                                            <select name="cars" selected id="selectPage">
-                                                    <option value="1" selected>1/3</option>
-                                                    <option value="2">2/3</option>
-                                                    <option value="3">3/3</option>
-                                            </select>
-                                    <!-- </a> -->
-                                
+                            <a href="javascript:;"><span class="texts">1</span><span>/</span><span>3</span></a>
+                           
                             </li>
-                            <li><a href="javascript:;">下一页</a></li>
+                            <li><a href="javascript:;" class="right">下一页</a></li>
                         </ul>
                     </div>
 
@@ -98,9 +92,10 @@
                
                         <a href="index.html">首页<i class="fa fa-angle-right"></i></a>
                         <a href="category.html">全部分类<i class="fa fa-angle-right"></i></a>
-                        {{each result v i}}
+                            {{each result v i}}
                         <a href="#">{{v.category}}<i class="fa fa-angle-right"></i></a>
                         {{/each}}
+                       
         </script>
 
 

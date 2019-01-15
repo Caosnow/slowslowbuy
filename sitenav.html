@@ -10,7 +10,7 @@
     <script src="./lib/flexible/flexible.js"></script>
     <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
     <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="./css/inlanddiscount.css">
+    <link rel="stylesheet" href="./css/sitenav.css">
    <link rel="stylesheet" href="./lib/fa/css/font-awesome.min.css">
 </head>
 
@@ -23,26 +23,24 @@
         <div class="mmm_header row">
                 <div class="left"><a href="index.html"><i class="fa fa-chevron-left"></i></a></div>
                 <div class="head_right clearfix"><a href="#"><img src="./images/header_app.png" alt=""></a></div>
-                <div class="title_heder"><h3> 国内折扣</h3></div>  
+                <div class="title_heder"><h3> 凑单品</h3></div>  
             </div>
 
         <!-- 主体内容区域 -->
-        <div class="mmm_main">
+         <!-- 主体内容区域 -->
+         <div class="mmm_main mm_sitenav">
+            <div class="mmm_nav_content">
 
-           <div class="mmm_content">
-                    <div class="ups_box">
-                        <ul class="clearfix">
-                          
-                            <!-- 挖了一个坑 -->
-                         
-                        </ul>
-
-               
-                       
-                    </div>
+                <ul class="clearfix">
                     
-           </div>
-
+                  <!-- 挖了一个大坑 -->
+               
+                </ul>
+            </div>
+         
+              
+               
+                
 
 
         </div>
@@ -62,32 +60,18 @@
 
     </div>
 </div>
-   
-
-<script type="text/html" id="infoTpl">
-    {{each result v i}}
-    <li>
-            <a href="discount.html?productId={{v.productId}}">
-          
-                   {{@v.productImg}}
                
-                <div class="title">
-                    <p class="text">{{v.productName}}</p>
-                    <p class="red">{{v.productPrice}}</p>
-                </div>
-                <div class="info">
-                    <span>{{v.productFrom}}</span>
-                    <span class="line">|</span>
-                    <span>{{v.productTime}}</span>
-                </div>
-            </a>
-        </li>   
 
-        {{/each}}
-
-
-</script>
-
+        <script type="text/html" id="infoTpl">
+            {{each result v i }}
+                 <li>
+                    <a href="{{v.navHref}}" class="clearfix">
+                        <i class="imbox fl"><img src="{{v.navImg}}" alt=""></i>
+                        <span class="fr">{{v.navTitle}}</span>
+                    </a>
+                </li>
+            {{/each}}
+        </script>
 
 
 
@@ -96,12 +80,8 @@
     <script src="./lib/zepto/zepto.min.js"></script>
     <script src="./lib/template/template-web.js"></script>
     <script src="./js/common.js"></script>
-    <script src="./js/inlanddiscount.js"></script>
-    
-
-    
+    <script src="./js/sitenav.js"></script>
    
-
  
     
 </body>

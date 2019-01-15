@@ -232,55 +232,32 @@ i,
 em {
   font-style: normal;
 }
-.content-box li {
+.mmm_main.brandtotal.couponbox {
   background-color: #fff;
+  margin-top: 0.4rem;
 }
-.content-box li .title {
-  width: 100%;
-  height: 1.04rem;
-  line-height: 1.01333333rem;
-  background-color: #ededed;
-  border-top: 1px solid #cecece;
-  border-bottom: 1px solid #cecece;
+.mmm_main.brandtotal.couponbox .mmm_imgs ul {
+  padding: 0 0 0.4rem 0.13333333rem;
 }
-.content-box li .title .bigtitle {
+.mmm_main.brandtotal.couponbox .mmm_imgs ul li {
   float: left;
-  height: 100%;
-  color: #fff;
-  padding-left: 0.26666667rem;
-  margin: 0;
-  font-size: 0.32rem;
-  color: #000;
+  width: 32%;
+  height: 2.26666667rem;
+  border: 2px solid #f1f1f1;
+  margin: 0.2rem 0.06666667rem 0 0;
 }
-.content-box li .title .more {
-  float: right;
-  margin-right: 0.26666667rem;
-  font-size: 0.32rem;
-  color: #807777;
+.mmm_main.brandtotal.couponbox .mmm_imgs ul a {
+  display: block;
 }
-.content-box li .titlea.togglee .fa-angle-up {
-  display: none;
+.mmm_main.brandtotal.couponbox .mmm_imgs ul a img {
+  width: 1.33333333rem;
+  height: 1.33333333rem;
+  margin: 0.2rem auto 0;
 }
-.content-box li #hide-box {
-  display: none;
-}
-.content-box li #hide-box .ul-box li {
-  float: left;
-  width: 33.3%;
+.mmm_main.brandtotal.couponbox .mmm_imgs ul a p {
   text-align: center;
-  height: 1.06666667rem;
-  line-height: 1.06666667rem;
-  border-bottom: 1px solid #cecece;
-  border-right: 1px solid #cecece;
-  background-color: #fff;
-}
-.content-box li #hide-box .ul-box li a {
-  display: block;
-  font-size: 0.21333333rem;
-}
-.content-box li #hide-box.current {
-  display: block;
-}
-.content:nth-last-child(1) {
-  margin-bottom: 0.6rem;
+  margin: 0;
+  font-size: 0.24rem;
+  color: #000;
+  padding-top: 0.06666667rem;
 }

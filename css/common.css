@@ -228,7 +228,8 @@ img {
   display: block;
   width: 100%;
 }
-i {
+i,
+em {
   font-style: normal;
 }
 .mmm_container {
@@ -253,6 +254,9 @@ i {
   padding-top: 0.30666667rem;
   margin-left: 0.46666667rem;
 }
+.mmm_container .mmm_header .head_left a {
+  display: block;
+}
 .mmm_container .mmm_header .head_right {
   float: right;
   width: 1.14666667rem;
@@ -276,6 +280,16 @@ i {
   line-height: 1.30666667rem;
   margin: 0;
   font-size: 0.45333333rem;
+}
+.mmm_header.row .left a {
+  float: left;
+  width: 0.61333333rem;
+  height: 0.61333333rem;
+  line-height: 0.61333333rem;
+  color: #fff;
+  margin: 0.32rem 0 0 0.13333333rem;
+  text-align: center;
+  font-size: 0.34666667rem;
 }
 .mmm_main {
   padding-top: 1.33333333rem;
@@ -309,6 +323,20 @@ i {
   border-radius: 0.66666667rem;
   padding-left: 0.53333333rem;
   color: #736e6a;
+}
+.mmm_main.brandtotal .brand_content .brand_title {
+  padding: 0 0.13333333rem;
+  margin: 0.26666667rem 0;
+}
+.mmm_main.brandtotal .brand_content .brand_title p {
+  margin: 0;
+  height: 1.04rem;
+  line-height: 1.01333333rem;
+  border: 1px solid #cbcbcb;
+  background-color: #eeeeee;
+  padding-left: 0.24rem;
+  font-size: 0.4rem;
+  color: #a36724;
 }
 .mmm_footer {
   width: 100%;
@@ -361,6 +389,10 @@ i {
   padding: 0.46666667rem 0.13333333rem;
   position: relative;
 }
+.content a .text_box p {
+  margin: 0;
+  height: 1.2rem;
+}
 .content a .text_box p:first-child {
   font-size: 0.26666667rem;
   color: #000;
@@ -368,6 +400,7 @@ i {
 .content a .text_box .red {
   color: #ff5f17;
   font-size: 0.24rem;
+  height: 0.53333333rem !important;
 }
 .content a .text_box .bottom {
   position: absolute;
@@ -384,6 +417,10 @@ i {
 }
 .content a .text_box .bottom .right {
   padding-right: 0.13333333rem;
+}
+.brand_product.brand_content .content .img_box img {
+  width: 2.66666667rem;
+  height: 2.66666667rem;
 }
 .pro-lujing {
   width: 100%;
@@ -437,8 +474,8 @@ i {
   width: 33.3%;
   height: 1.06666667rem;
   line-height: 0.98666667rem;
-  background-color: red;
   text-align: center;
+  position: relative;
 }
 .paginator-box li a {
   border: 1px solid #dbdbdb;
@@ -447,10 +484,6 @@ i {
   padding: 0.10666667rem 0.26666667rem;
   border: 1px solid #9f9f9f;
   font-size: 0.24rem;
-}
-.paginator-box li a #selectPage {
-  height: 0.34666667rem;
-  width: 0.13333333rem;
 }
 .mmm_content {
   padding: 0 0.26666667rem;
